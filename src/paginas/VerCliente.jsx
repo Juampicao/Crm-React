@@ -1,66 +1,73 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import Spiner from '../components/Spiner';
-
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import Spinner from '../components/Spinner'
 
 const VerCliente = () => {
 
-    const [cliente, setCliente] = useState({});
-    const [cargando, setCargando] = useState(true);
+    const [cliente, setCliente] = useState({})
+    const [cargando, setCargando] = useState(true)
 
+    const { id } = useParams()
 
-    const { id } = useParams();
-   
     useEffect(() => {
-        // setCargando(!cargando)
         const obtenerClienteAPI = async () => {
             try {
-                const url = `http://localhost:4000/clientes/${id}`
+                const url = `${import.meta.env.VITE_API_URL}/${id}`
                 const respuesta = await fetch(url)
                 const resultado = await respuesta.json()
-
-
                 setCliente(resultado)
-                
             } catch (error) {
-
                 console.log(error)
-            }  
-            
-         setCargando(!cargando)
-        
-        } 
-        obtenerClienteAPI();
+            }
+            setCargando(!cargando)
+
+        }
+        obtenerClienteAPI()
     }, [])
 
-  
-        
     return (
+        cargando ? <Spinner /> : 
+            Object.keys(cliente).length === 0 ? 
+            <p>No Hay Resultados</p> : (
+                <div>
+                    <h1 className="font-black text-4xl text-blue-900">Ver Cliente: {cliente.nombre}</h1>
+                    <p className="mt-3">Información del Cliente</p>
 
-      
-        <div>
-         
-            <> 
-                {/* <Spiner/> */}
-                <h1 className='text-blue-800 font-black uppercase text-2xl'> Ver cliente: </h1>
-                <h2 className='mt-2 font-bold'> Informacion del cliente </h2>
-                
-              <div className='mt-5 grid grid-cols-1 text-xs xs:text-sm sm:text-lg lg:text-2xl space-y-3'> 
-                <p className='font-bold  uppercase'> Cliente: <span className='font-normal '> {cliente.nombre} </span></p>     
-                <p className='font-bold  uppercase'> Empresa: <span className='font-normal '>{cliente.empresa} </span></p>
-                <p className='font-bold  uppercase'> Email: <span className='font-normal '>{cliente.email} </span></p>
-                <p className='font-bold  uppercase'> Telefono: <span className='font-normal '>{cliente.telefono} </span></p>
-                <p className='font-bold  uppercase'> Notas: <span className='font-normal '>{cliente.notas} </span></p> 
+
+                    {cliente.nombre && (
+                        <p className="text-4xl text-gray-600 mt-10">
+                            <span className="text-gray-800 uppercase font-bold">Cliente: </span>
+                            {cliente.nombre}
+                        </p>
+                    )}
+                    {cliente.email && (
+                        <p className="text-2xl text-gray-600 mt-4">
+                            <span className="text-gray-800 uppercase font-bold">Email: </span>
+                            {cliente.email}
+                        </p>
+                    )}
+                    {cliente.telefono && (
+                        <p className="text-2xl text-gray-600 mt-4">
+                            <span className="text-gray-800 uppercase font-bold">Teléfono: </span>
+                            {cliente.telefono}
+                        </p>
+                    )}
+                    {cliente.empresa && (
+                        <p className="text-2xl text-gray-600 mt-4">
+                            <span className="text-gray-800 uppercase font-bold">Empresa: </span>
+                            {cliente.empresa}
+                        </p>
+                    )}
+                    {cliente.notas && (
+                        <p className="text-2xl text-gray-600 mt-4">
+                            <span className="text-gray-800 uppercase font-bold">Notas: </span>
+                            {cliente.notas}
+                        </p>
+                    )}
+
                 </div>
-
-                
-            </>
-
-                   
-            </div> 
-        
-            
-   )
+            )
+    ) 
 }
- 
+
 export default VerCliente
