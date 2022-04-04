@@ -51,11 +51,11 @@ const Formulario = ({cliente, cargando}) => {
                     'Content-Type' : 'application/json'
                 }
             })
-            console.log(respuesta)
-            const resultado = await respuesta.json()
-            console.log(resultado)
+                 console.log(respuesta)
+                 const resultado = await respuesta.json()
+                 console.log(resultado)
 
-                navigate("/clientes");
+                     navigate("/clientes");
                 
 
             } else {
@@ -68,12 +68,13 @@ const Formulario = ({cliente, cargando}) => {
                     'Content-Type' : 'application/json'
                 }
             })
-            console.log(respuesta)
-            const resultado = await respuesta.json()
-            console.log(resultado)
+                 console.log(respuesta)
+                 const resultado = await respuesta.json()
+                 console.log(resultado)
 
-            navigate("/clientes");
+                 navigate("/clientes");
             }
+            
         } catch (error) {
             console.log(error)
 

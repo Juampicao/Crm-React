@@ -1,0 +1,76 @@
+{
+  "clientes": [
+    {
+      "nombre": "Pedro",
+      "empresa": "Icelack",
+      "email": "juampitrading@gmail.com",
+      "telefono": "11232123123",
+      "notas": "ascfsaf",
+      "id": 1
+    },
+    {
+      "nombre": "Marcos",
+      "empresa": "Icelack",
+      "email": "juampitrading@gmail.com",
+      "telefono": "11232123123",
+      "notas": ",,,",
+      "id": 2
+    },
+    {
+      "nombre": "Gonza",
+      "empresa": "Icelack",
+      "email": "juampitrading@gmail.com",
+      "telefono": "11232123123",
+      "notas": "asfas",
+      "id": 3
+    },
+    {
+      "nombre": "Julian Alvarez",
+      "empresa": "River Plate",
+      "email": "juli@correo.com",
+      "telefono": "153023123",
+      "notas": "",
+      "id": 4
+    },
+    {
+      "nombre": "Alfred",
+      "empresa": "Autos SRL",
+      "email": "alfred@alfred.com",
+      "telefono": "1523212412",
+      "notas": "No tenemos nada para decir",
+      "id": 5
+    },
+    {
+      "nombre": "Vero",
+      "empresa": "Danza srl",
+      "email": "vero@vero.com",
+      "telefono": "1534312412",
+      "notas": "Damos clases de danza",
+      "id": 6
+    },
+    {
+      "nombre": "Momfred",
+      "empresa": "Danza srl",
+      "email": "vero@vero.com",
+      "telefono": "1534312412",
+      "notas": "Damos clases de danza",
+      "id": 7
+    },
+    {
+      "nombre": "Juan Marcos Guzman",
+      "empresa": "IT tech",
+      "email": "juan@correo.com",
+      "telefono": "112425112",
+      "notas": "nadaa",
+      "id": 8
+    },
+    {
+      "nombre": "Gonza?",
+      "empresa": "Icelack",
+      "email": "juampitrading@gmail.com",
+      "telefono": "11232123123",
+      "notas": "ascfsaf",
+      "id": 9
+    }
+  ]
+}
