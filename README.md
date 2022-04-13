@@ -5,7 +5,7 @@ Proyecto CRM / REACT / JSON-SERVER / FORMIK / ROUTER
 1) cd crmReact
 2) npm run dev
 
-*CONECTAR API*
+CONECTAR API
 3) cd crmReact 
 4) json-server --watch db.json --port 4000
 
