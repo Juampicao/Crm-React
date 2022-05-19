@@ -1,28 +1,12 @@
 {
   "clientes": [
     {
-      "nombre": "Julian Alvarez",
-      "empresa": "River Plate",
-      "email": "juli@correo.com",
-      "telefono": "153023123",
-      "notas": "",
-      "id": 4
-    },
-    {
-      "nombre": "Alfred Editado",
+      "nombre": "Alfred Des-Editado",
       "empresa": "Autos SRL",
       "email": "alfred@alfred.com",
       "telefono": "1523212412",
       "notas": "No tenemos nada para decir",
       "id": 5
-    },
-    {
-      "nombre": "Vero",
-      "empresa": "Danza srl",
-      "email": "vero@vero.com",
-      "telefono": "1534312412",
-      "notas": "Damos clases de danza",
-      "id": 6
     },
     {
       "nombre": "Momfred",
@@ -63,6 +47,14 @@
       "telefono": "124124124",
       "notas": "sfdsd",
       "id": 11
+    },
+    {
+      "nombre": "Diego Leuco",
+      "empresa": "asfasf",
+      "email": "juampitrading@gmail.com",
+      "telefono": "12412",
+      "notas": "adfafa",
+      "id": 12
     }
   ]
 }
