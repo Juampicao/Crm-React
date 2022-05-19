@@ -62,7 +62,7 @@ const Formulario = ({ cliente, cargando }) => {
       className="bg-white mt-10 px-5 py-10 rounded-md shadow-md 
             md:w-3/4 mx-auto"
     >
-      <h1 className="text-gray-600 font-bold text-xl uppercase text-center">
+      <h1 className="text-gray-600 font-bold text-xl uppercase text-center cursor-pointer">
         {cliente?.nombre ? "Editar Cliente" : "Agregar Cliente"}
       </h1>
 
@@ -168,7 +168,7 @@ const Formulario = ({ cliente, cargando }) => {
               <input
                 type="submit"
                 value={cliente?.nombre ? "Editar Cliente" : "Agregar Cliente"}
-                className="mt-5 w-full bg-blue-800 p-3 text-white uppercase font-bold text-lg"
+                className="mt-5 w-full bg-blue-800 p-3 text-white uppercase font-bold text-lg cursor-pointer hover:bg-blue-900"
               />
             </Form>
           );
