@@ -1,7 +1,7 @@
 {
   "clientes": [
     {
-      "nombre": "Alfred Des-Editado",
+      "nombre": "Alfred Editado",
       "empresa": "Autos SRL",
       "email": "alfred@alfred.com",
       "telefono": "1523212412",
@@ -55,6 +55,14 @@
       "telefono": "12412",
       "notas": "adfafa",
       "id": 12
+    },
+    {
+      "nombre": "More beltran",
+      "empresa": "Espn",
+      "email": "juampitrading@gmail.com",
+      "telefono": "12312412412",
+      "notas": "adfasdf",
+      "id": 13
     }
   ]
 }
